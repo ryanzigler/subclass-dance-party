@@ -9,13 +9,14 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .lineUpDancers, .addBlinkyDancerButton, .addDancingBabyButton, .addElaineDanceButton {
   padding:5px 12px;
   float:right;
 }
 .topbar{
   height:32px;
   background-color: #555;
+  font-family: 'Limelight', cursive;
 }
 .title{
   background-color: #777;
@@ -27,7 +28,6 @@ body, a:link, a:visited, a:active{
 }
 
 .baby{
-  content:url("assets/dancing-baby-1.gif");
   position: absolute;
 }
 

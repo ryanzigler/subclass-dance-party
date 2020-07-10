@@ -1,9 +1,10 @@
 $(document).ready(function() {
   window.dancers = [];
 
+  /* ====== BLINKY ====== */
+
   $('.addBlinkyDancerButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     var newBlinkyDancer = new MakeBlinkyDancer(
@@ -13,11 +14,13 @@ $(document).ready(function() {
     );
     window.dancers.push(newBlinkyDancer);
     $('body').append(newBlinkyDancer.$node);
+
   });
+
+  /* ====== BABY ====== */
 
   $('.addDancingBabyButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     var newDancingBaby = new MakeDancingBaby(
@@ -29,9 +32,10 @@ $(document).ready(function() {
     $('body').append(newDancingBaby.$node);
   });
 
+
+  /* ====== ELAINE ====== */
   $('.addElaineDanceButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     var newDancingElaine = new MakeElaineDance(
@@ -43,15 +47,8 @@ $(document).ready(function() {
     $('body').append(newDancingElaine.$node);
   });
 
+  /* ====== LINEUP ====== */
   $('.lineUpDancers').on('click', function(event) {
-    // var index = 0;
-    // for (var i = 0; i < window.dancers.length; i++) {
-    //   $(window.dancers[i]).animate({
-    //     top: 100,
-    //     left: 100 + index
-    //   });
-    //   index += 50;
-    // }
     for (var i = 0; i < window.dancers.length; i++) {
       window.dancers[i].lineUp();
     }
