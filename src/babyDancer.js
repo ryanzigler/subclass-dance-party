@@ -2,7 +2,7 @@ var MakeDancingBaby = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('baby');
   this.$node.append('<img class="baby" id="image" src="assets/dancing-baby-1.gif"></img>');
-  this.$node.click(function() {
+  this.$node.mouseover(function() {
     if ($(this).css('transform') === 'none' ) {
       $(this).css('transform', 'rotate(180deg)');
     } else {

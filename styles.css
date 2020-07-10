@@ -7,7 +7,7 @@ body{
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: #ff69b4;
 }
 .title, .lineUpDancers, .addBlinkyDancerButton, .addDancingBabyButton, .addElaineDanceButton {
   padding:5px 12px;
@@ -15,14 +15,14 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: #00f030;
   font-family: 'Limelight', cursive;
 }
 .title{
-  background-color: #777;
+  background-color: #00c0f0;
 }
 .dancer{
-  border:10px solid blue;
+  border:15px solid #d8f000;
   border-radius:10px;
   position:absolute;
 }
