@@ -53,4 +53,23 @@ $(document).ready(function() {
       window.dancers[i].lineUp();
     }
   });
+
+  /* ====== FACE OFF ====== */
+  $('.faceOff').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length - 1; i+=2) {
+      var top =  $('body').height() * Math.random();
+      var left = $('body').width() * Math.random();
+      // var top = 20;
+      // var left = 20;
+      window.dancers[i].setPosition(top, left);
+      window.dancers[i + 1].setPosition(top, left);
+    }
+  })
+
+  /* ====== ASSEMBLE ====== */
+  $('.assemble').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].assemble();
+    }
+  })
 });
